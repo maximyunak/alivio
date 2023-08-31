@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+a,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+aside,
+footer,
+header,
+legend,
+main,
+nav,
+section {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+ul,
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+input::-ms-clear {
+  display: none;
+}
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background: 0 0;
+  cursor: pointer;
+}
+button:active,
+button:focus,
+input:active,
+input:focus {
+  outline: 0;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+label {
+  cursor: pointer;
+}
+
+$accent: #01996d;
+
+:root {
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+Georgian:wght@700&display=swap");
+
+[class*="__container"] {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  background-color: $accent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background-color: #00a979;
+  }
+  a {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+body {
+  font-family: "Lato";
+}
+
+a {
+  color: #000;
+}
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 72px;
+  }
+
+  &__menu-item {
+    a {
+      transition: 0.2s;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__buttons-sing {
+    a {
+      color: #000;
+    }
+  }
+
+  &__buttons-start {
+    padding: 13px 40px;
+  }
+}
+
+.manage {
+  background: url(../img/header-bg.png) center center/cover no-repeat;
+  height: 800px;
+  &__container {
+  }
+
+  &__title {
+    max-width: 440px;
+    color: #01996d;
+    padding-top: 175px;
+    font-family: Georgia;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__desc {
+    max-width: 440px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #484848;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157%; /* 31.4px */
+  }
+
+  &__btn {
+    display: flex;
+    padding: 20px 50px;
+    max-width: 200px;
+  }
+}
+
+.works {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    max-width: 584px;
+    padding-top: calc(78px * 2);
+  }
+
+  &__undertitle {
+    color: #424242;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 157%;
+  }
+
+  &__title {
+    color: $accent;
+    font-family: Georgia;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157%;
+  }
+
+  &__desc {
+    padding-top: calc(136px + 78px);
+    max-width: 660px;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
